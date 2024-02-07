@@ -1,0 +1,101 @@
+for Testing Batch 07/02/2024  
+
+//Static topic
+
+//Declaration
+public class Account{
+
+	private int accno;        //instance data member , non-static data member , object level info
+	private float balance;    //instance data member , non-static data member , object level info
+
+
+	private static double int_rate;     //static data member , class level info 
+}
+-------------------------------------------------------------------------------------------------------
+Note:-In construtor we should not initialized static data members.
+Note:-Constructor main purpose is to initilized instance data members
+
+ 
+public class Account{
+
+	private int accno;        //instance data member , non-static data member , object level info
+	private float balance;    //instance data member , non-static data member , object level info
+
+
+	private static double int_rate;     //static data member , class level info 
+
+	//static block -used to initialized static data member
+	static{
+	      int_rate=4.5;
+	      }
+	
+	//default cons
+	public Account()
+	{
+	
+	}
+
+	//para cons
+	public Account(int a , float b)
+	{
+		this.accno=a;
+		this.balance=b;
+		//this.int_rate=i; //The static field Account.int_rate should be accessed in a static block
+		// or we shoulc always initialized in static block
+	}
+
+}
+------------------------------------------------------------------------------------------------------
+Question:-When should static member gets initialized
+Ans:-Constructor is used for initializing instance data members or static member get initialized before 1st object is created.
+
+
+	//static block -used to initialized static data member
+	static{         				//static block get initilized only static data members
+	      int_rate=4.5;               		//non-static data member gets initilized within constructor
+	      //accno=1;  //Cannot make a static reference to the non-static field accno
+	      }						//static block gets called only once.
+							//but constrctor may get called for every object creation.	
+
+-------------------------------------------------------------------------------------------------------
+Question:-When static block get executed
+Ans:-Static block gets executed when Class is loaded in memory only once at first time.
+Class will not be reloading. 
+Class is already available in memory , beacuse class is a template,referring always differnt object.
+
+-------------------------------------------------------------------------------------------------------
+Question:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Getter setter methods used in java
+If we use private data members in our class then we used this getter and setter methods , 
+without defining any constructor we use this intance members.
+
+Array revise
+Assignments
+
+
+Conditional and loops pdf share and some basic programs videos.
+
+
+
