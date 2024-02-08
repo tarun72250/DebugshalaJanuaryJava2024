@@ -58,13 +58,33 @@ Ans:-Constructor is used for initializing instance data members or static member
 							//but constrctor may get called for every object creation.	
 
 -------------------------------------------------------------------------------------------------------
+
 Question:-When static block get executed
-Ans:-Static block gets executed when Class is loaded in memory only once at first time.
-Class will not be reloading. 
+Ans:-Static block gets executed when Class is loaded in memory. or class will get loaded in memory when 1st object is created.
+Class will not be reloading for subsequent object creation. 
 Class is already available in memory , beacuse class is a template,referring always differnt object.
 
 -------------------------------------------------------------------------------------------------------
-Question:-
+Question:-How many objects are created - 2
+	  How many times constructor gets called - 2
+	  How many times static block gets called - only once      and when gets called - before class loaded in memory
+
+ex:-At morning we shared a meeting link to separate for everyone or says that join the meeting or meeting is not started.
+but its not a good approach. the meeting link share in group and says msg that start the meeting , everybody refers that link.
+
+	So, our static block is like that , Static is something or static data member is something to store data which is going to be common for all objects of same class.
+	Every static member gets initialized ,before 1st object is created or that can be done using static block  which gets called or executed when class is loaded in memory before creating any 1st object of that class.
+
+-------------------------------------------------------------------------------------------------------
+Question:-is good approach to declare static member gets initialized at time of declaration.
+
+
+
+Note:-static - that is always associate with class.
+      Object - that is always associate with constructor.   
+ 	  
+	  
+
 
 
 
