@@ -4,7 +4,7 @@ public class IfElseStatement {
 
 	public static void main(String[] args) {
 	
-		int a =4;
+		int a =42;
 		int b =8;
 		
 		if(b > a)

@@ -6,7 +6,7 @@ public class UsingBooleanVariable {
 		
 		int x = 100;
 		int y = 93;
-		System.out.println(x > y); // returns true, because 10 is higher than 9
+		System.out.println(x > y); // returns true, because 100 is higher than 93
 
 		
 		boolean isJavaFun = true;

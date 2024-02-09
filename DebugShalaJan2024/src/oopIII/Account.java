@@ -6,14 +6,17 @@ public class Account {
 	   //instance - non-static data members
 	   private int accno;
 	   private float balance;
+	   
 	   //static data member	
-	   private static float int_rate; 
+	   //its not a good approach to initialize the static data member value at time of declaration
+	   private static double int_rate; 
 	    
 	   //static block 
 	   static
 	   {
 		System.out.println("in static block");
 		int_rate = 4.5f;
+		//accno=1;  //Cannot make a static reference to the non-static field accno
 	   }
 
 	   //default constructor
@@ -24,22 +27,25 @@ public class Account {
 	   }
 
 	   //parametrized constructor
-	   public Account(int accno, float balance)
+	   public Account(int accno, float balance , double i)
 	   {
 		this.accno = accno;
 		this.balance = balance;
+		//this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
 	   }
 
 	   
 	   //static method which is called directly by class name
 	   public static void updateRate(float nrate)
 	   {
-		int_rate = nrate;
+		System.out.println("In updateRate Static method");
+		int_rate=nrate;
+		System.out.println(int_rate);
 		//this.balance = 14000.00f;   //not allowed to access non-static
 	   }
 
-	   //static method to access this class static method value
-	   public static float getIntRate()
+	   //static method to access this class static method value direct with classname
+	   public static double getIntRate()
 	   {
 		return int_rate;
 	   }		

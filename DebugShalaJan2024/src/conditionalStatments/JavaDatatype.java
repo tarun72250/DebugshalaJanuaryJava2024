@@ -16,7 +16,7 @@ public class JavaDatatype {
 		String myText = "Hello";     // String
 		
 		/*
-		 Data types are divided into two groups:
+		Data types are divided into two groups:
 		Primitive data types - includes byte, short, int, long, float, double, boolean and char
 		Non-primitive data types - such as String, Arrays and Classes (you will learn more about
 		 these in a later chapter)

@@ -6,9 +6,9 @@ public class Date {
 
 	   //data members
 	   //created on heap - 0/0.0/false/'\0000'
-	   private int dd;   
-	   private int mm;
-	   private int yy;
+	    int dd;   
+	    int mm;
+	    int yy;
 	   //private boolean leapYear;
 
 	   //no-arg or default constructor
@@ -23,7 +23,7 @@ public class Date {
 	   public Date(int dd,int mm,int yy)
 	   {
 		this.dd=dd;
-		mm=mm;
+		this.mm=mm;
 		this.yy=yy;
 	   } 
 

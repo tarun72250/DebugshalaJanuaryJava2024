@@ -20,9 +20,7 @@ public class ArrayClass2 {
 				arr[2]=3;
 				arr[3]=4;
 				arr[4]=5;
-				
-				
-				
+				//If i want ot sum of all array elements
 				for(int i=0 ; i<arr.length ; i++)
 				{
 					sum = sum+arr[i];

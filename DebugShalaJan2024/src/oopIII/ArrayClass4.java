@@ -45,8 +45,8 @@ public class ArrayClass4 {
 		Account [] acc_arr;
 		acc_arr = new Account[3];   //array of accounts   initialize the array of size 
 		acc_arr[0] = new Account();    //creating one element ,default constructor
-		acc_arr[1] = new Account(1001,10000.00f); 
-		acc_arr[2] = new Account(1010, 15000.00f); 
+		acc_arr[1] = new Account(); 
+		acc_arr[2] = new Account(); 
 		
 		for(int i=0;i<acc_arr.length;i++)
 			System.out.println(acc_arr[i].calBalance());

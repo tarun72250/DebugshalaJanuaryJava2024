@@ -1,18 +1,18 @@
 package oopIII;
 
-public class DateClass {
+public class DateClassUsingAssociation {
 	
 	//instance data member
 	int dd,mm,yy;
 	
 	//Default cons
-	public DateClass()
+	public DateClassUsingAssociation()
 	{
 		
 	}
 	
 	//Paramterized cons
-	public DateClass(int d , int m , int y)
+	public DateClassUsingAssociation(int d , int m , int y)
 	{
 		this.dd=d;
 		this.mm=m;

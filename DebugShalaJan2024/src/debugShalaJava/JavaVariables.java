@@ -10,21 +10,21 @@ public class JavaVariables {
 		Variables are containers for storing data values.
 		Create a variable called name of type String and assign it the value "John":
 		*/
-		String name = "John";
+		String name = "Tarun";
 		System.out.println(name);
 		
 		//Create a variable called myNum of type int and assign it the value 15:
-		int myNum = 15;
+		int myNum = 15; // Java is case sensitive because myNum or mynum both are different.
 		System.out.println(myNum);
 		
-		int myNum1; //declaration
-		myNum1 = 15; //initilizaton
-		System.out.println(myNum1);   // display
+		int eshan; //declaration
+		eshan = 15; //initilizaton
+		System.out.println(eshan);   // display
 		
 		//Change the value of myNum from 15 to 20:
-		int myNum2 = 15;
-		myNum2 = 20;  // myNum is now 20
-		System.out.println(myNum2);
+		int sumit = 15;
+		sumit = 20;  // myNum is now 20
+		System.out.println(sumit);
 		
 		/*
 		 Final Variables
@@ -32,8 +32,8 @@ public class JavaVariables {
 		 use the final keyword (this will declare the variable as "final" or "constant",
 		  which means unchangeable and read-only):
 		 */
-		final String myNum3 ="Sumit";
-		//myNum3 = "Anmol";  // will generate an error: cannot assign a value to a final variable
+		final int sumit1 =9;
+		//sumit1 = 8;  // will generate an error: cannot assign a value to a final variable
 		
 		
 		/*
@@ -46,7 +46,7 @@ public class JavaVariables {
 		boolean myBool = true;
 		String myText = "Hello";
 		
-		/*
+		/* String concatenations.
 		Display Variables
 		The println() method is often used to display variables.
 		To combine both text and a variable, use the + character:
@@ -65,7 +65,7 @@ public class JavaVariables {
 		//operator (notice that we use int (integer) variables here):
 		int x = 5;
 		int y = 6;
-		System.out.println(y-x); // Print the value of x + y
+		System.out.println(y+x); // Print the value of x + y
   
 		/*
 		Declare Many Variables
@@ -95,7 +95,7 @@ public class JavaVariables {
 		Note: It is recommended to use descriptive names in order to create understandable and maintainable code:
 		 */
 		// Good
-		int minutesPerHour = 60;
+		int minutesPerHour = 60; //camelCasing 
 
 		// OK, but not so easy to understand what m actually is
 		int m = 60;

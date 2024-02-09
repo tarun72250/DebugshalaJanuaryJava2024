@@ -9,6 +9,10 @@ public class TernaryClassOperator {
 		System.out.println(result);
 		
 		
+		int b = 14;
+		int z = (b < 12) ? 2 : 3;
+		System.out.println(z);
+		
 
 	}
 

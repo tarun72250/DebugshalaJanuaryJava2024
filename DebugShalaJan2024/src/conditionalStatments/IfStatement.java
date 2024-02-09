@@ -6,7 +6,7 @@ public class IfStatement {
 		
 		
 		int a =23;
-		int b =3;
+		int b =33;
 		
 		if(a > b)
 		{
