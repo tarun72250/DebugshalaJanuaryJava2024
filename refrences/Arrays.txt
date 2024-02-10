@@ -7,12 +7,15 @@ Note:-Arrays in java are treated as Objects.
 
 #Declaration:-
 		int [] arr;  //refrence variable of Array.
+datatype:-datatype is a indentifier which identify which type of value u stored in a particular container.
+variable:-variable is a container which stores some type of value.
 
 Question:-Where this array will get created in memory.
 Ans:- Array is always get created in heap , using new keyword.
 
 #Initialiazation:-
 		arr = new int[5]; //its compulsory to always when Initialiazation of Array we get some size provided in that because, Arrays has got some fixed size.
+		arr = new int[]; // this may get through error when no value initialized.
 
 
 #Instiatation:-
@@ -23,11 +26,19 @@ Ans:- Array is always get created in heap , using new keyword.
 		arr [4] =5;  //arr[index]=value;
 
 Question:-How can you acces this Array.?
-Ans :- Array can be accesible using for loop , any loops.
+Ans :- Array can be access through this also
+
+		System.out.println(arr[0]); //1
+		System.out.println(arr[1]); //2
+		System.out.println(arr[2]); //3
+		System.out.println(arr[3]); //4
+		System.out.println(arr[4]); //5
+
+or we can Array can be accesible using for loop , any loops.
 	
-	for(int i=0 ; i<arr.length ; i++)
+	for(int i=0 ; i<arr.length ; i++) //0<=4   1<=4   2<=4   3<=4   4<=4   5<=4 (false) loop breaked.
 	{
-		System.out.println(arr[i]);
+		System.out.println(arr[i]); //arr[0] =1   arr[1] =2   arr[2] =3   arr[3] =4   arr[4] =5 
 	}
 		
 #we can also declare and initilize both at same time

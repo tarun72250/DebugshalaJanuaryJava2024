@@ -95,6 +95,8 @@ public class ArrayDemo {
 		 {
 			datearr[i].showDate();
 		 }
+		 
+		 
 	   
 	}
 

@@ -17,7 +17,7 @@ public class Book {
 	Book()  			//default constructor
 	{
 		count++;
-		bookid=count;
+		bookid=count	;
 		this.price=0;
 	}
 	Book(float price)	//parametrized constructor

@@ -3,8 +3,49 @@ package oopIII;
 import java.util.Scanner;
 
 public class A_5_Array {
+	
+	public static void main(String[]arsg)
+	{
+		int a []=new int[5];
+		a[0]=20;
+		a[1]=30;
+		a[2]=40;
+		a[3]=50;
+		a[4]=60;
+		
+		for (int i=0;i<a.length;i++)
+			System.out.println("value of index are:"+a[i]);
+		
+		
+		int max=a[0];
+		for (int i=0;i<a.length;i++)
+		{	
+			if(max<a[i])
+				max=a[i];
+		}
+		System.out.println("Maximum value:"+max);
+		
+		int min=a[0];
+		for (int i=0;i<a.length;i++)
+		{
+			if(min>a[i])
+				min=a[i];
+		}
+		System.out.println("Minimum value:"+min);
+		
+		int avg=0;
+		int sum=0;
+		for (int i=0;i<a.length;i++)
+		{
+			sum=a[i]+sum;// 20 30 40 50 60 =200
+			avg=sum/a.length;
+			//  200/5=40	
+		}
+		System.out.println("Average is :"+avg);
 
-	public static void min(int[] arr)
+	}
+
+	/*public static void min(int[] arr)
 	{
 		
 	//int[] arr={2,4,6,8,10};
@@ -57,5 +98,5 @@ public class A_5_Array {
 	min(arr);
 	max(arr);
 	average(arr);
-	}
+	}*/
 }
