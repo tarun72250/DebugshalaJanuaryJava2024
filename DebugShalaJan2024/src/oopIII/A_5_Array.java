@@ -16,7 +16,7 @@ public class A_5_Array {
 		for (int i=0;i<a.length;i++)
 			System.out.println("value of index are:"+a[i]);
 		
-		
+		//For maximum value found 
 		int max=a[0];
 		for (int i=0;i<a.length;i++)
 		{	
@@ -25,6 +25,7 @@ public class A_5_Array {
 		}
 		System.out.println("Maximum value:"+max);
 		
+		//For minimum value found
 		int min=a[0];
 		for (int i=0;i<a.length;i++)
 		{
@@ -33,6 +34,7 @@ public class A_5_Array {
 		}
 		System.out.println("Minimum value:"+min);
 		
+		//For average found 
 		int avg=0;
 		int sum=0;
 		for (int i=0;i<a.length;i++)

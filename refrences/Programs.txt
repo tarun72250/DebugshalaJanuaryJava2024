@@ -1,0 +1,282 @@
+PROGRAMS on NUMBERS
+
+09/02/2024
+1. Write a Java program to add two numbers
+
+public class JavaExample 
+{
+  public static void main(String[] args)
+ {
+    // two integer variables with values
+    // and a variable "sum" to store the result
+    int num1 = 5, num2 = 15,sum;
+
+    //calculating the sum of num1 and num2 and
+    //storing the result in the variable sum
+    sum = num1+num2;
+
+    //printing the result
+    System.out.println("Sum of "+num1+" and "+num2+" is: "+sum);
+  }
+}
+
+Output:
+
+Sum of 5 and 15 is: 20
+===========================================================================================================================
+2.Sum of two numbers using Scanner
+The Scanner class provides the methods that allows us to read the user input. The values entered by user is read using Scanner class and stored in two variables num1 and num2. The program then calculates the sum of input numbers and displays it.
+
+import java.util.Scanner;
+public class AddTwoNumbers2 
+{
+
+    public static void main(String[] args)
+  {
+        
+        int num1, num2, sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Number: ");
+        num1 = sc.nextInt();
+        
+        System.out.println("Enter Second Number: ");
+        num2 = sc.nextInt();
+        
+        sc.close();
+        sum = num1 + num2;
+        System.out.println("Sum of these numbers: "+sum);
+    }
+}
+
+Output:
+
+Enter First Number: 
+121
+Enter Second Number: 
+19
+Sum of these numbers: 140
+===========================================================================================================================
+3. Program to check if the number entered by user is even or odd?
+
+import java.util.Scanner;
+public class JavaExample
+{
+  public static void main(String args[])
+  {
+    int num;
+    System.out.print("Enter an Integer number: ");
+
+    //The input provided by user is stored in num
+    Scanner input = new Scanner(System.in);
+    num = input.nextInt();
+
+    // If number is divisible by 2 then it's an even number
+    //else it is an odd number
+    if ( num % 2 == 0 )
+      System.out.println(num+" is an even number.");
+    else
+      System.out.println(num+" is an odd number.");
+  }
+}
+
+Output:-
+Enter an Integer number: 
+12
+12 is an even number.
+===========================================================================================================================
+4. Program to check even odd number using ternary operator
+
+import java.util.Scanner;
+public class JavaExample {
+
+  public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.print("Enter any number: ");
+    int num = scan.nextInt();
+
+    //checking if else using ternary operator
+    //ternary operator syntax: condition ? expression1 : expression2
+    // if condition is true, expression1 executes else expression2
+    String evenOrOdd = (num % 2 == 0) ? "even number" : "odd number";
+
+    System.out.println(num + " is an " + evenOrOdd);
+
+  }
+}
+
+Output 1: When user enters 32 number.
+
+Enter any number: 32
+32 is an even number
+
+
+Output 2: When user enters 13 number.
+
+Enter any number: 13
+13 is an odd number
+===========================================================================================================================
+5.Program to read two integer and print product of them?
+
+import java.util.Scanner;
+public class Demo {
+
+    public static void main(String[] args) 
+   {
+
+        /* This reads the input provided by user
+         * using keyboard
+         */
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+
+        // This method reads the number provided using keyboard
+        int num1 = scan.nextInt();
+        
+        System.out.print("Enter second number: ");
+        int num2 = scan.nextInt();
+
+        // Closing Scanner after the use
+        scan.close();
+        
+        // Calculating product of two numbers
+        int product = num1*num2;
+        
+        // Displaying the multiplication result
+        System.out.println("Output: "+product);
+    }
+}
+
+Output:
+
+Enter first number: 15
+Enter second number: 6
+Output: 90
+===========================================================================================================================
+
+===========================================================================================================================
+6.Read two integer or floating point numbers and display the multiplication?
+
+import java.util.Scanner;
+public class Demo {
+
+    public static void main(String[] args) {
+
+        /* This reads the input provided by user
+         * using keyboard
+         */
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+
+        // This method reads the number provided using keyboard
+        double num1 = scan.nextDouble();
+        
+        System.out.print("Enter second number: ");
+        double num2 = scan.nextDouble();
+
+        // Closing Scanner after the use
+        scan.close();
+        
+        // Calculating product of two numbers
+        double product = num1*num2;
+        
+        // Displaying the multiplication result
+        System.out.println("Output: "+product);
+    }
+}
+Output:
+
+Enter first number: 1.5
+Enter second number: 2.5
+Output: 3.75
+
+===========================================================================================================================
+7.Write a Java Program to calculate simple interest?
+
+import java.util.Scanner;
+public class JavaExample
+{
+    public static void main(String args[]) 
+    {
+        float p, r, t, sinterest;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the Principal : ");
+        p = scan.nextFloat();
+        System.out.print("Enter the Rate of interest : ");
+        r = scan.nextFloat();
+        System.out.print("Enter the Time period : ");
+        t = scan.nextFloat();
+        scan.close();
+        sinterest = (p * r * t) / 100;
+        System.out.print("Simple Interest is: " +sinterest);
+    }
+}
+
+Output:
+
+Enter the Principal : 2000
+Enter the Rate of interest : 6
+Enter the Time period : 3
+Simple Interest is: 360.0
+===========================================================================================================================
+8.Write a Program to check whether the input year is leap or not?
+
+import java.util.Scanner;
+public class Demo {
+
+    public static void main(String[] args) {
+
+    	int year;
+    	Scanner scan = new Scanner(System.in);
+    	System.out.println("Enter any Year:");
+    	year = scan.nextInt();
+    	scan.close();
+        boolean isLeap = false;
+
+        if(year % 4 == 0)
+        {
+            if( year % 100 == 0)
+            {
+                if ( year % 400 == 0)
+                    isLeap = true;
+                else
+                    isLeap = false;
+            }
+            else
+                isLeap = true;
+        }
+        else {
+            isLeap = false;
+        }
+
+        if(isLeap==true)
+            System.out.println(year + " is a Leap Year.");
+        else
+            System.out.println(year + " is not a Leap Year.");
+    }
+}
+Output:
+
+Enter any Year: 
+2001
+2001 is not a Leap Year.
+
+===========================================================================================================================
+9.Write a program to display MULTIPLICATION TABLES?
+===========================================================================================================================
+10.Write program weather the number is PERFECT NUMBER or not?
+
+
+04/01/2024
+===========================================================================================================================
+11.Write a program to display RANGE of PERFECT NUMBERS?
+===========================================================================================================================
+12.Write a program to check the given number is PALINDROME or not?
+===========================================================================================================================
+13.Write a program to find the FACTORIAL of a given number?		
+===========================================================================================================================
+14.Write a program to find the FACTORIAL of a given RANGE of numbers?
+===========================================================================================================================
+15.Write program to check the given number is STRONG or not?
+===========================================================================================================================
