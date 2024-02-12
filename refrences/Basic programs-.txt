@@ -1,0 +1,149 @@
+Basic programs:-
+Decision Making in Java (if, if-else, switch, break, continue, jump)
+
+Java’s Selection statements: 
+
+if
+if-else
+nested-if
+if-else-if
+switch-case
+jump – break, continue, return
+
+if statement: if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statements is executed otherwise not. 
+------------------------------------------------------------------------------------------
+1.Write a program to print no is even or odd.
+public class EvenOddClass{
+	
+	public static void main(String[]args)
+		{
+			int n=10;
+			if(n%2==0)
+			System.out.println("n is even");
+			else
+			System.out.println("n is odd");
+			
+			m=12;
+			if(m%2==0)
+			System.out.println("m is even");
+			else
+			System.out.println("m is odd");
+
+		}
+	} 
+
+------------------------------------------------------------------------------------------
+2.Write a program to find Simple interset with principal , rate and time.
+public class SimpleInterest{
+	
+	public static void main(String[]args)
+		{
+			int principal=1000; 
+			float rate=10.0;
+			int time=2;
+			int simpleInterest;
+			simpleInterest = principal*rate*time/100;
+			System.out.println("Simple interest is :"+simpleInterest);
+		}
+	} 
+------------------------------------------------------------------------------------------
+3.Write a program to find Area of circle.
+public class AreaOfCircle{
+	
+	public static void main(String[]args)
+		{
+			double radius=10.00;
+			double pi=3.12;
+			double area = radius * radius * pi;
+			System.out.println("Area of Circle is "+area);
+		}
+	} 
+------------------------------------------------------------------------------------------
+4.Write a program to find Largest number.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int a=100;
+			int b=300;
+			if(a>b)
+			System.out.println("a is largest");
+			else
+			System.out.println("b is largest");
+		}
+	}
+------------------------------------------------------------------------------------------
+5.Write a program to find Area of Square.
+public class AreaOfSquare{
+	
+	public static void main(String[]args)
+		{
+			int side=10;
+			int area=4 * side;
+			System.out.println("Area of Square:- "+area);
+		}
+	}
+------------------------------------------------------------------------------------------
+6.Write a program to find Area of Rectangle.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int length=100;
+			int breadth=300;
+			int area =2*(length+breadth);
+			System.out.println("Area of Rectangle"+area);
+		}
+	}
+------------------------------------------------------------------------------------------
+7.Write a program to find Area of Triangle.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int base=10;
+			int height=15;
+			int area =1/2*(base*height);
+			System.out.println("Area of Triangle"+area);
+		}
+	}
+------------------------------------------------------------------------------------------
+8.Write a program to find Area of Trapezium.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int a=10;
+			int b=15;
+			int height=20;
+			int area =1/2*(a+b)*h;
+			System.out.println("Area of Trapezium"+area);
+		}
+	}
+
+------------------------------------------------------------------------------------------
+9.Write a program to find Speed.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int distance=10;
+			int time=15;
+			int speed =distance/time;
+			System.out.println("Speed is:- "+speed);
+		}
+	}
+
+------------------------------------------------------------------------------------------
+10.Write a program to find distance.
+public class LargestNumber{
+	
+	public static void main(String[]args)
+		{
+			int speed=110;
+			int time=125;
+			int distance =speed*time;
+			System.out.println("Distance is :- "+distance);
+		}
+	}
+------------------------------------------------------------------------------------------
