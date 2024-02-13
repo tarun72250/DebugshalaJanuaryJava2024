@@ -58,7 +58,6 @@ Ans:-Constructor is used for initializing instance data members or static member
 							//but constrctor may get called for every object creation.	
 
 -------------------------------------------------------------------------------------------------------
-
 Question:-When static block get executed
 Ans:-Static block gets executed when Class is loaded in memory. or class will get loaded in memory when 1st object is created.
 Class will not be reloading for subsequent object creation. 

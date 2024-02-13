@@ -7,15 +7,12 @@ Note:-Arrays in java are treated as Objects.
 
 #Declaration:-
 		int [] arr;  //refrence variable of Array.
-datatype:-datatype is a indentifier which identify which type of value u stored in a particular container.
-variable:-variable is a container which stores some type of value.
 
 Question:-Where this array will get created in memory.
 Ans:- Array is always get created in heap , using new keyword.
 
 #Initialiazation:-
 		arr = new int[5]; //its compulsory to always when Initialiazation of Array we get some size provided in that because, Arrays has got some fixed size.
-		arr = new int[]; // this may get through error when no value initialized.
 
 
 #Instiatation:-
@@ -26,26 +23,18 @@ Ans:- Array is always get created in heap , using new keyword.
 		arr [4] =5;  //arr[index]=value;
 
 Question:-How can you acces this Array.?
-Ans :- Array can be access through this also
-
-		System.out.println(arr[0]); //1
-		System.out.println(arr[1]); //2
-		System.out.println(arr[2]); //3
-		System.out.println(arr[3]); //4
-		System.out.println(arr[4]); //5
-
-or we can Array can be accesible using for loop , any loops.
+Ans :- Array can be accesible using for loop , any loops.
 	
-	for(int i=0 ; i<arr.length ; i++) //0<=4   1<=4   2<=4   3<=4   4<=4   5<=4 (false) loop breaked.
+	for(int i=0 ; i<arr.length ; i++)
 	{
-		System.out.println(arr[i]); //arr[0] =1   arr[1] =2   arr[2] =3   arr[3] =4   arr[4] =5 
+		System.out.println(arr[i]);
 	}
 		
 #we can also declare and initilize both at same time
 
 		int [] arr = {1,2,3,4,5};	//5 size array will be created and initialize
 
-#Matrix:Array of Array,2d array:-
+#Matrix:Array of Array,:-
 #Declartion:-
 	     int [][] arr;
 #Initilization:-
@@ -74,68 +63,4 @@ for(int i=0 ; i<3 ; i++)
 		System.out.println(arr[i][j]);
 	}
 }
--------------------------------------------------------------------
 
-
-		//Declaration of array 
-		int [] arr ;
-		//Array creation on heap on size 5
-		arr= new int [5];
-		//for accessing the element of array
-		for(int i=0 ; i<arr.length ; i++)
-		{
-			System.out.println(arr[i]);
-		}
-		
-		//short way of declaring the array 
-		int [] arr1 = {12,23,34,4,5,6};
-		for(int i=0 ; i<arr1.length ; i++)
-		{
-			System.out.println(arr1[i]);
-		}
-		
-		//if u want to print horizontly
-		int [] arr2 = {12,23,34,4,5,6};
-		for(int i=0 ; i<arr2.length ; i++)
-		{
-			System.out.print(arr2[i]+" , ");
-		}
-		
-		
-		
-		System.out.println("\n 2d array ");
-		//if u want print 2d array or matrix print
-		int [][]matrix = {{1,2,3},{4,5,6},{1,2,3}};
-		for(int i=0 ; i<3 ; i++)
-		{
-			for(int j=0 ; j<matrix[i].length ; j++)
-			{
-				System.out.print(matrix[i][j]+" ");
-			}
-			System.out.println();
-		}
-		
-		System.out.println("\n second 2d array ");
-		//if u want print 2d array or matrix print
-		int [][]matrix1 = {{1},{4,5},{1,2,3}};
-		for(int i=0 ; i<3 ; i++)
-		{
-			for(int j=0 ; j<matrix1[i].length ; j++)
-			{
-				System.out.print(matrix1[i][j]+" ");
-			}
-			System.out.println();
-		}
-		
-		
-		//if i want to create date objects array
-		Date [] datearr ;
-		datearr = new Date[3];//array of 3 date object
-		datearr[0]= new Date();//default cons
-		datearr[1]= new Date(11,12,2024);//default cons
-		datearr[2]= new Date(12,11,2022);//default cons
-		for(int i=0 ; i<datearr.length ; i++)
-		{
-			datearr[i].showDate();
-		}
-		
