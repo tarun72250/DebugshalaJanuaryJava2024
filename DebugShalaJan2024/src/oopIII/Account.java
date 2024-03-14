@@ -33,13 +33,21 @@ public class Account {
 		this.balance = balance;
 		//this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
 	   }
+	   
+	 //copy constructor
+	   public Account(Account a)
+	   {
+		this.accno = a.accno;
+		this.balance = a.balance;
+		//this.int_rate=i; //The static field Account.int_rate should be accessed in a static block or we shoulc always initialized in static block
+	   }
 
 	   
 	   //static method which is called directly by class name
-	   public static void updateRate(float nrate)
+	   public static void updateRate(float new_rate)
 	   {
 		System.out.println("In updateRate Static method");
-		int_rate=nrate;
+		int_rate=new_rate;
 		System.out.println(int_rate);
 		//this.balance = 14000.00f;   //not allowed to access non-static
 	   }

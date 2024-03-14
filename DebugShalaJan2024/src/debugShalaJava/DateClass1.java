@@ -24,11 +24,20 @@ public class DateClass1 {
 	}
 	
 	
-	//parametrized constrcutor
+	//partially - parametrized constrcutor
 	public DateClass1(int dd, int mm)
 	{
 		this.dd=dd;
 		this.mm=mm;
+	}
+	
+	
+	//Copy cons
+	public DateClass1(DateClass1 d)
+	{
+		this.dd=d.dd;
+		this.mm=d.mm;
+		this.yy=d.yy;
 	}
 	
 	

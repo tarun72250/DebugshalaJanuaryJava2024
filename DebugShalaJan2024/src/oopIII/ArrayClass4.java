@@ -69,7 +69,7 @@ public class ArrayClass4 {
 		
 		for(int i=0;i<datearr.length;i++)
 		{
-		    System.out.println(datearr[i].isLeapYear());	
+		    //System.out.println(datearr[i].isLeapYear());	
 		} 
 		
 		

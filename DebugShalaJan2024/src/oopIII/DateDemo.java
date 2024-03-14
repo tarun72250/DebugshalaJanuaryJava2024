@@ -17,15 +17,15 @@ public class DateDemo {
 		Date d3 = new Date(d2);
 		d3.showDate();     //  12/0/2000 
 
-		if(d1.isLeapYear())
-		   System.out.println("d1 is leapyear");
-		else
-		   System.out.println("d1 is not leapyear");
-
-		if(d2.isLeapYear())//if it return true statement 1 execute
-		   System.out.println("d2 is leapyear");
-		else//if it false execute this
-		   System.out.println("d2 is not leapyear");
+//		if(d1.isLeapYear())
+//		   System.out.println("d1 is leapyear");
+//		else
+//		   System.out.println("d1 is not leapyear");
+//
+//		if(d2.isLeapYear())//if it return true statement 1 execute
+//		   System.out.println("d2 is leapyear");
+//		else//if it false execute this
+//		   System.out.println("d2 is not leapyear");
 	}
 
 }
