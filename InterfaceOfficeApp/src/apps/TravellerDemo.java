@@ -38,9 +38,6 @@ public class TravellerDemo {
 			}
 			//this will through runtime error for admin
 		}
-		
-		
-		
 		/*
 		String s ="welcome";
 		SalesManager sm = (SalesManager)s;//this may failed at runtime*/
