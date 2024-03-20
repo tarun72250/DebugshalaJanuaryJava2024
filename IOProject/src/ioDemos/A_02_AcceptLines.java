@@ -7,7 +7,49 @@ import java.io.InputStreamReader;
 public class A_02_AcceptLines {
 
 	public static void main(String[] args) {
-		//BufferedReader will be used to read input from the user.
+		
+		BufferedReader br =null;
+		try 
+		{
+			//1.open the stream
+			//This line creates new BufferedReader object, which reads standard input stream (System.in). It's wrapped in InputStreamReader to convert bytes into characters.
+			br = new BufferedReader( new InputStreamReader(System.in));
+			String line;
+			System.out.println("Enter 'stop' to quit");
+			
+			int max =0;
+			String maxLine ="";
+			//2.uses the streams
+			while(!(line = br.readLine()).equals("stop"))
+			{
+				System.out.println(line);
+				if(max < line.length())
+				{
+					max = line.length();
+					maxLine = line; 
+				}
+			}
+			System.out.println("Longest STring :"+maxLine);
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
+		finally
+		{
+			try {
+				br.close();
+			}
+			catch(IOException e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+}
+
+/*
+//BufferedReader will be used to read input from the user.
 		BufferedReader br=null;
 		try 
 		{
@@ -47,5 +89,4 @@ public class A_02_AcceptLines {
 				e.printStackTrace();
 			}
 		}
-	}
-}
+*/

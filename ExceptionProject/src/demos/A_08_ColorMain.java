@@ -10,7 +10,7 @@ public class A_08_ColorMain {
 	{
 		try
 		{
-			A_08_Colorpoint c = new A_08_Colorpoint("Red",2,3);
+			A_08_Colorpoint c = new A_08_Colorpoint("Violet",2,3);
 			System.out.println( c.toString()); 
 			
 	        //A_08_Colorpoint c = new A_08_Colorpoint("Red",2,3);

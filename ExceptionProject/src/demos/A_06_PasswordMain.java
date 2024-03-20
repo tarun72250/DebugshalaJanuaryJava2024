@@ -14,7 +14,7 @@ public class A_06_PasswordMain {
 			System.out.println("Enter the passwordd");
 			String pwd=sc.next();
 			int count=pwd.length();
-				if(count>12) {
+				if(count >12) {
 					 throw new A_06_PasswordTooLongExp();
 				}
 				if(count<8) {

@@ -6,7 +6,7 @@ public class A_07_InvalidCountryExcep extends Exception {
 	private String msg;
 	
 	public A_07_InvalidCountryExcep() {
-		this.usercountry=usercountry;
+		this.usercountry="No country specified by user";
 		msg="Out the country is not allowed";
 	}
 	

@@ -7,7 +7,7 @@ import customException.A_07_InvalidCountryExcep;
 public class A_07_UserRegrestion {
 
 
-	public static void regestieruser(String username,String usercountry) {
+	public static void regestierUser(String username,String usercountry) {
 		try {
 		if(usercountry.equals("india" )) {
 		   System.out.println("User registered");	
@@ -32,7 +32,7 @@ public class A_07_UserRegrestion {
 		System.out.println("Enter user country");
 		usercountry=sc.next();
 		
-		regestieruser(username,usercountry);
+		regestierUser(username,usercountry);
 	}
 
 	

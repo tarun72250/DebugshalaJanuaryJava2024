@@ -11,7 +11,6 @@ public class A_04_UseOfFinally1 {
 			System.out.println("In Try block...!");
 			int n1 = Integer.parseInt("Hello");
 			//only one condition there were finally not gets executed
-			System.exit(0);//program has been terminated forcefully , only scenario the finally block get not executed
 			//System.out.println("Last statement in try block....!");
 		  //return;//if u have return stmt finaly gets executed.
 
@@ -20,6 +19,8 @@ public class A_04_UseOfFinally1 {
 		{
 			//e.printStackTrace();
 			System.out.println("in catch block");
+			System.exit(0);//program has been terminated forcefully , only scenario the finally block get not executed
+
 		}
 		//we written that in finally block seen in next demo
 		finally //finally block will always get executed even if there is execption or not
@@ -29,4 +30,25 @@ public class A_04_UseOfFinally1 {
 		}
 	}
 
+	/*public static void main(String[] args) {
+		
+		try {
+			int n =Integer.parseInt(args[0]);
+			if(n!=0)
+			{
+				System.out.println(10/n);
+			}
+			else
+			{
+				System.exit(0);
+			}
+		}catch(ArithmeticException e)
+		{
+			System.out.println("Divide by Zero...");
+		}
+		finally
+		{
+			System.out.println();
+		}
+	}*/
 }
